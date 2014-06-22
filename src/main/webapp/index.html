@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myapp">	
+
+    <body >
+        <div ng-controller="UserController">
+            <div ng-show="flag">
+                <form>
+                    <input type="text" ng-model="user.name" placeholder="Name"><br>
+                    <input type="text" ng-model="user.fatherName" placeholder="Father Name"><br>
+                    <input type="text" ng-model="user.age" placeholder="Age"><br>
+                    <input type="text" ng-model="user.address" placeholder="Address"><br>
+                    <button ng-click="registerUser()">Submit</button>
+                </form>
+            </div>
+            <div ng-hide="flag">
+                <form>
+                    Registered detail {{registeredUser}}
+                </form>
+            </div>
+        </div>
+        <script src="lib/angular/angular.js"></script>
+        <script src="app/controllers/UserController.js"></script>
+        <script src="app/services/user-service.js"></script>
+
+    </body>
+</html>
