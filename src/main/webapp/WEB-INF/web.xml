@@ -3,8 +3,8 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
 	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
 
-	<display-name>Intelesant UI</display-name>
+	<display-name>Seedbase</display-name>
 	<welcome-file-list>
-		<welcome-file>index.html</welcome-file>
+		<welcome-file>login.html</welcome-file>
 	</welcome-file-list>
 </web-app>
