@@ -6,7 +6,7 @@ angular.module("UserService", []).
                 register: function(data) {
                     return $http({
                         method: 'get',
-                        url: '/mailapp/user/register?'+data,
+                        url: '/mdm/user/register?'+data,
                         
                         async: false
                     });
