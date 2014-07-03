@@ -2,7 +2,7 @@
 var mdm = angular.module("mdm", ['LoginService']);
 mdm.controller('LoginController', function($rootScope, $scope, $log, loginService, $location) {
     $scope.flag = true;
-    $scope.user="";
+    $scope.user={};
     console.log("inside login controller user object is "+$scope.user);
     $scope.loginUser = function() {
         loginService.loginUser($scope.user).success(function(data) {
